@@ -1,0 +1,212 @@
+/* ------ CSS Pages Services & Services Description ------ */
+
+/* body*/
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0%;
+}
+
+/* header*/
+header {
+  background-color: white;
+  font-family: "Montserrat", sans-serif;
+  padding-bottom: 5px;
+}
+
+/* logo*/
+.logo {
+  width: 260px;
+  padding-top: 15px;
+  margin-left: 15%;
+  margin-bottom: 0px;
+}
+
+/* navigation menu*/
+nav {
+  position: absolute;
+  top: 5%;
+  right: 25%;
+}
+
+nav li {
+  display: inline;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: none;
+  margin: 0 0 0 15px;
+}
+
+nav a:hover {
+  color: #bf66f2;
+}
+/* End of header*/
+
+/* ------- CSS Page Services ------- */
+
+/* services section*/
+
+.service-title {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-bottom: 1.5px solid #fba242;
+}
+
+.services {
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 60px;
+  margin-bottom: 80px;
+}
+
+.image-service {
+  width: 90%;
+  padding: 30px;
+}
+.services {
+  width: 940px;
+  padding: 10px 0;
+}
+
+.services li {
+  background-color: white;
+  display: inline-block;
+  text-align: center;
+  width: 30%;
+  vertical-align: top;
+  margin: 0 1.5%;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  border-color: #000000;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 10px;
+}
+
+.services li:hover {
+  border-color: #fba242;
+}
+
+.services li:hover h2 {
+  font-size: 34px;
+}
+
+.services li:hover h2 {
+  font-size: 34px;
+}
+
+.services h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.service-description {
+  font-size: 18px;
+}
+
+.price {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+/* End of services section*/
+
+/* ------- CSS Page Services-Description ------- */
+
+.all-single-service {
+  width: 500px;
+  padding: 10px 0;
+}
+
+.image-single-service {
+  border-radius: 20px;
+  margin-right: 50px;
+  float: right;
+  width: 25%;
+}
+
+.services-single-product {
+  background-color: rgb(254, 247, 237);
+  display: inline-block;
+  text-align: center;
+  width: 130%;
+  margin-left: 70%;
+  box-sizing: border-box;
+  border-color: #000000;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 10px;
+}
+.all-single-service li:hover {
+  border-color: #fba242;
+}
+
+.all-single-service li:hover h2 {
+  font-size: 34px;
+}
+
+.all-single-service li:hover h2 {
+  font-size: 34px;
+}
+h2 {
+  text-align: center;
+}
+
+.service-single-description {
+  text-align: left;
+  font-size: 20px;
+  padding-left: 30px;
+}
+
+/* ------ Footer ------ */
+
+footer {
+  background-image: url(footer.jpg);
+  width: 100%;
+}
+
+.copyright {
+  color: #861a60;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: lowercase;
+  text-align: center;
+  padding: 30px;
+  font-size: 13px;
+  margin: 20px;
+  margin-bottom: 0px;
+}
+/* End of footer */
+
+/* Media Screen */
+@media screen and (max-width: 767px) {
+  .column {
+    width: 100%;
+  }
+
+  .logo-name {
+    display: block;
+    width: 4%;
+    font-size: 25px;
+    text-align: center;
+    top: 1%;
+    right: 55%;
+  }
+  .img {
+    display: block;
+  }
+
+  nav {
+    top: 0.5%;
+    right: 10%;
+  }
+
+  nav li {
+    display: block;
+    text-align: center right;
+  }
+}
+/* End of Media Screen */

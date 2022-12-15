@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style_forms.css" />
+    <link href="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Alex Brush"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <script src="external.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        $("#datetimepicker1").datetimepicker();
+      });
+    </script>
+    <title>Booking Service</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="box">
+        <img class="logo" src="logo1.png" alt="logo" />
+
+        <!-- Nav Links -->
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="beauty-services.html">Services</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <h1>Booking Details</h1>
+    <br />
+    <br />
+    <br />
+    <form class="row g-3">
+      <div class="col-md-6">
+        <label for="validationServer01" class="form-label">First name</label>
+        <input
+          type="text"
+          class="form-control is-valid"
+          id="validationServer01"
+          placeholder="Enter your first name"
+          required
+        />
+        <div class="valid-feedback"></div>
+      </div>
+      <div class="col-md-6">
+        <label for="validationServer02" class="form-label">Last name</label>
+        <input
+          type="text"
+          class="form-control is-valid"
+          id="validationServer02"
+          placeholder="Enter your last name"
+          required
+        />
+        <div class="valid-feedback"></div>
+      </div>
+      <div class="col-md-12">
+        <label for="validationServer03" class="form-label">Address</label>
+        <input
+          type="text"
+          class="form-control is-valid"
+          id="validationServer03"
+          placeholder="Enter your address"
+          required
+        />
+        <div class="valid-feedback"></div>
+      </div>
+      <div class="col-md-4">
+        <label for="validationServer04" class="form-label">EIR CODE</label>
+        <input
+          type="text"
+          class="form-control is-invalid"
+          id="validationServer04"
+          aria-describedby="validationServer05Feedback"
+          maxlength="7"
+          minlength="7"
+          placeholder="EIR CODE"
+          required
+        />
+        <div id="validationServer05Feedback" class="invalid-feedback"></div>
+      </div>
+      <div class="col-md-4">
+        <label for="validationServer05" class="form-label">Phone</label>
+        <input
+          type="text"
+          class="form-control is-invalid"
+          id="validationServer05"
+          aria-describedby="validationServer05Feedback"
+          maxlength="10"
+          minlength="10"
+          placeholder="0871234567"
+          required
+        />
+        <div id="validationServer06Feedback" class="invalid-feedback"></div>
+      </div>
+      <div class="col-sm-4">
+        <label for="validationServer06" class="form-label"
+          >Pick your date and time</label
+        >
+        <div class="form-group">
+          <div class="input-group date" id="datetimepicker1">
+            <input type="text" class="form-control" />
+            <span class="input-group-addon">
+              <span class="glyphicon glyphicon-calendar"></span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12">
+        <label for="exampleFormControlTextarea1" class="form-label"
+          >Comment</label
+        >
+        <textarea
+          class="form-control"
+          id="exampleFormControlTextarea1"
+          rows="3"
+        ></textarea>
+        <br />
+        <br />
+      </div>
+      <br />
+      <br />
+
+      <h2 class="payment-text">Payment</h2>
+
+      <div class="col-md-4">
+        <label for="validationServer07" class="form-label">Name on Card</label>
+        <input
+          type="text"
+          class="form-control is-valid"
+          id="validationServer07"
+          value=""
+          placeholder="Full name as displayed on card"
+          required
+        />
+      </div>
+      <div class="col-md-4">
+        <b>Card Number</b>
+        <label for="validationServer08" class="form-label"></label>
+
+        <input
+          type="text"
+          class="form-control is-valid"
+          id="validationServer08"
+          value=""
+          maxlength="19"
+          minlength="19"
+          placeholder="XXXX XXXX XXXX XXXX"
+          required
+        />
+        <div class="valid-feedback"></div>
+      </div>
+      <div class="col-md-2">
+        <label for="validationServer09" class="form-label">Expiration</label>
+        <input
+          type="text"
+          class="form-control is-valid"
+          id="validationServer09"
+          value=""
+          maxlength="7"
+          minlength="7"
+          placeholder="MM/YYYY"
+          required
+        />
+        <div class="valid-feedback"></div>
+      </div>
+      <div class="col-md-2">
+        <label for="validationServer10" class="form-label">CVV</label>
+        <input
+          type="text"
+          class="form-control is-valid"
+          id="validationServer10"
+          value=""
+          maxlength="3"
+          minlength="3"
+          placeholder="XXX"
+          required
+        /><br />
+        <br />
+        <div class="valid-feedback"></div>
+      </div>
+
+      <div class="col-sm-10">
+        <div class="form-check">
+          <input
+            class="form-check-input is-invalid"
+            type="checkbox"
+            value=""
+            id="invalidCheck3"
+            aria-describedby="invalidCheck3Feedback"
+            required
+          />
+          <label class="form-check-label" for="invalidCheck3">
+            Agree to terms and conditions
+          </label>
+          <div id="invalidCheck3Feedback" class="invalid-feedback">
+            You must agree before submitting.
+          </div>
+          <br />
+          <br />
+          <br />
+        </div>
+      </div>
+      <div class="col-sm-12">
+        <button class="button-sub" type="submit" onclick="thankyou()">
+          Submit form
+        </button>
+      </div>
+    </form>
+
+    <!-- Footer -->
+    <footer>
+      <h5 class="copyright">&copy; Copyright Beauty by Home - 2022</h5>
+    </footer>
+  </body>
+</html>
